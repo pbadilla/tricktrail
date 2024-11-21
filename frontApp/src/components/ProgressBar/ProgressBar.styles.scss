@@ -1,0 +1,21 @@
+.container {
+  height: 20px;
+  width: 100%;
+  background-color: var(--container-bg-color); /* Using the container background color variable */
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.filler {
+  height: 100%;
+  background-color: var(--filler-bg-color); /* Using the filler background color variable */
+  border-radius: inherit;
+  transition: width var(--transition-duration) ease-in-out; /* Using the transition duration variable */
+  text-align: right;
+}
+
+.label {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}

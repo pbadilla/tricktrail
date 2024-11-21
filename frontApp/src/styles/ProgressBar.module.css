@@ -1,0 +1,22 @@
+/* ProgressBar.module.css */
+.container {
+    height: 20px;
+    width: 100%;
+    background-color: #e6fdf9;
+    border-radius: 50px;
+    margin: 5px;
+  }
+  
+  .filler {
+    height: 100%;
+    border-radius: inherit;
+    transition: width 1s ease-in-out;
+    text-align: right;
+  }
+  
+  .label {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  

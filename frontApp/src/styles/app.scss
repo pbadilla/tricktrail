@@ -1,0 +1,82 @@
+
+@use './colors';
+@import url('https://fonts.googleapis.com/css?family=Jost');
+
+
+:root {
+  background-color: colors.$background-white;
+  color: colors.$text;
+  color-scheme: light dark;
+  font-family: "Jost", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+
+  a {
+    color: colors.$black;
+    font-family: "Jost", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+      color: colors.$hover;
+      text-decoration: dotted underline;
+    }
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.body {
+  background-color: colors.$white;
+  display: grid;
+  grid-area: body;
+  grid-template-rows: repeat(3, 1fr);
+  height: 130vh;
+  padding: 20px;
+  place-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  width: 800px;
+}
+
+.footer {
+  background-color: colors.$footer-background;
+  color: white;
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  color: white;
+  grid-area: header;
+  padding: 20px;
+  text-align: center;
+}
