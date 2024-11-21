@@ -1,5 +1,7 @@
 # Ignore node_modules in the root-level subdirectories
 /*/node_modules/
+/*/.env
 
 # Optional: Ignore node_modules in the root folder itself (if applicable)
 node_modules/
+.env
